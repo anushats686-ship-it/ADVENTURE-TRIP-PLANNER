@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f8f6;
+    color: #123c32;
+}
+
+.destinations-section {
+    padding: 70px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.subtitle {
+    color: #16805c;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-heading h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: #5f6f69;
+    line-height: 1.6;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.destination-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(18, 60, 50, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(18, 60, 50, 0.2);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #5f6f69;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card-content h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.activities span {
+    background: #e3f3ed;
+    color: #16805c;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card-content button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #123c32;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.card-content button:hover {
+    background: #16805c;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-heading h1 {
+        font-size: 30px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .destinations-section {
+        padding: 50px 5%;
+    }
+
+    .destinations-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section-heading h1 {
+        font-size: 26px;
+    }
+
+    .destination-card img {
+        height: 200px;
+    }
+}
