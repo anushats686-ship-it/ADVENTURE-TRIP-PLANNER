@@ -1,24 +1,12 @@
-/* ========================================
-   BASIC RESET
-======================================== */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-/* ========================================
-   BODY
-======================================== */
-
 body {
     font-family: Arial, sans-serif;
-
     min-height: 100vh;
 
-    /* YOUR BACKGROUND IMAGE */
     background-image:
         linear-gradient(
             rgba(0, 0, 0, 0.15),
@@ -35,20 +23,11 @@ body {
     align-items: center;
 
     padding: 30px;
-
     color: white;
 }
-
-
-/* ========================================
-   MAIN CONTAINER
-======================================== */
-
 .container {
     width: 100%;
     max-width: 650px;
-
-    /* Transparent */
     background: rgba(255, 255, 255, 0.10);
 
     border: 1px solid rgba(255, 255, 255, 0.30);
@@ -56,18 +35,12 @@ body {
     border-radius: 25px;
 
     padding: 5px;
-
-    /* Shadow */
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
 
     transition: 0.4s ease;
 
     animation: containerShow 0.8s ease;
 }
-
-
-/* Container hover */
-
 .container:hover {
     transform: translateY(-5px);
 
@@ -75,10 +48,6 @@ body {
         0 25px 60px rgba(0, 0, 0, 0.45),
         0 0 25px rgba(0, 200, 255, 0.15);
 }
-
-
-/* Container animation */
-
 @keyframes containerShow {
 
     from {
@@ -91,16 +60,9 @@ body {
         transform: translateY(0);
     }
 }
-
-
-/* ========================================
-   PLANNER CARD
-======================================== */
-
 .planner-card {
     padding: 35px;
 
-    /* Transparent card */
     background: rgba(20, 35, 55, 0.35);
 
     border-radius: 20px;
@@ -112,12 +74,6 @@ body {
 
     transition: 0.4s ease;
 }
-
-
-/* ========================================
-   HEADING
-======================================== */
-
 h1 {
     text-align: center;
 
@@ -132,10 +88,6 @@ h1 {
 
     animation: headingAnimation 1s ease;
 }
-
-
-/* Heading animation */
-
 @keyframes headingAnimation {
 
     from {
@@ -148,12 +100,6 @@ h1 {
         transform: scale(1);
     }
 }
-
-
-/* ========================================
-   SUBTITLE
-======================================== */
-
 .subtitle {
     text-align: center;
 
@@ -166,21 +112,11 @@ h1 {
     text-shadow:
         0 2px 5px rgba(0, 0, 0, 0.5);
 }
-
-
-/* ========================================
-   FORM GROUP
-======================================== */
-
 .form-group {
     margin-bottom: 22px;
 
     animation: formAnimation 0.7s ease;
 }
-
-
-/* Form animation */
-
 @keyframes formAnimation {
 
     from {
@@ -193,12 +129,6 @@ h1 {
         transform: translateY(0);
     }
 }
-
-
-/* ========================================
-   LABEL
-======================================== */
-
 .form-group > label {
     display: block;
 
@@ -213,12 +143,6 @@ h1 {
     text-shadow:
         0 2px 5px rgba(0, 0, 0, 0.5);
 }
-
-
-/* ========================================
-   SELECT + INPUT
-======================================== */
-
 select,
 input[type="number"],
 input[type="date"] {
@@ -230,8 +154,6 @@ input[type="date"] {
     border-radius: 11px;
 
     border: 1px solid rgba(255, 255, 255, 0.35);
-
-    /* Transparent */
     background: rgba(255, 255, 255, 0.15);
 
     color: white;
@@ -242,34 +164,16 @@ input[type="date"] {
 
     transition: 0.3s ease;
 }
-
-
-/* ========================================
-   SELECT OPTIONS
-======================================== */
-
 select option {
 
     background: #172337;
 
     color: white;
 }
-
-
-/* ========================================
-   PLACEHOLDER
-======================================== */
-
 input::placeholder {
 
     color: rgba(255, 255, 255, 0.75);
 }
-
-
-/* ========================================
-   INPUT HOVER
-======================================== */
-
 select:hover,
 input[type="number"]:hover,
 input[type="date"]:hover {
@@ -278,12 +182,6 @@ input[type="date"]:hover {
 
     background: rgba(255, 255, 255, 0.20);
 }
-
-
-/* ========================================
-   INPUT FOCUS
-======================================== */
-
 select:focus,
 input[type="number"]:focus,
 input[type="date"]:focus {
@@ -298,12 +196,6 @@ input[type="date"]:focus {
 
     transform: translateY(-2px);
 }
-
-
-/* ========================================
-   ACTIVITIES
-======================================== */
-
 .activities {
 
     display: grid;
@@ -312,10 +204,6 @@ input[type="date"]:focus {
 
     gap: 10px;
 }
-
-
-/* Activity box */
-
 .activity {
 
     display: flex;
@@ -336,10 +224,6 @@ input[type="date"]:focus {
 
     transition: 0.3s ease;
 }
-
-
-/* Activity hover */
-
 .activity:hover {
 
     background: rgba(56, 189, 248, 0.20);
@@ -351,10 +235,6 @@ input[type="date"]:focus {
     box-shadow:
         0 5px 15px rgba(56, 189, 248, 0.20);
 }
-
-
-/* Checkbox */
-
 .activity input {
 
     width: 16px;
@@ -368,11 +248,6 @@ input[type="date"]:focus {
     cursor: pointer;
 }
 
-
-/* ========================================
-   TRAVEL TYPES
-======================================== */
-
 .travel-types {
 
     display: grid;
@@ -381,10 +256,6 @@ input[type="date"]:focus {
 
     gap: 10px;
 }
-
-
-/* Travel type */
-
 .travel-types label {
 
     padding: 12px 5px;
@@ -403,10 +274,6 @@ input[type="date"]:focus {
 
     transition: 0.3s ease;
 }
-
-
-/* Travel type hover */
-
 .travel-types label:hover {
 
     background: rgba(139, 92, 246, 0.22);
@@ -418,22 +285,12 @@ input[type="date"]:focus {
     box-shadow:
         0 5px 15px rgba(139, 92, 246, 0.20);
 }
-
-
-/* Radio */
-
 .travel-types input {
 
     accent-color: #a78bfa;
 
     cursor: pointer;
 }
-
-
-/* ========================================
-   BUTTON
-======================================== */
-
 button {
 
     width: 100%;
@@ -470,10 +327,6 @@ button {
 
     animation: buttonGradient 5s ease infinite;
 }
-
-
-/* Button gradient animation */
-
 @keyframes buttonGradient {
 
     0% {
@@ -488,10 +341,6 @@ button {
         background-position: 0% 50%;
     }
 }
-
-
-/* Button hover */
-
 button:hover {
 
     transform: translateY(-4px);
@@ -500,33 +349,17 @@ button:hover {
         0 12px 30px rgba(0, 0, 0, 0.40),
         0 0 25px rgba(56, 189, 248, 0.30);
 }
-
-
-/* Button click */
-
 button:active {
 
     transform: translateY(0);
 
 }
-
-
-/* ========================================
-   DATE INPUT ICON
-======================================== */
-
 input[type="date"]::-webkit-calendar-picker-indicator {
 
     filter: invert(1);
 
     cursor: pointer;
 }
-
-
-/* ========================================
-   MOBILE RESPONSIVE
-======================================== */
-
 @media (max-width: 600px) {
 
     body {
@@ -580,11 +413,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
 }
-
-
-/* ========================================
-   SMALL MOBILE
-======================================== */
 
 @media (max-width: 400px) {
 
