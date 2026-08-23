@@ -1,0 +1,383 @@
+/* ================================
+   Trip Result Page
+   Adventure Trip Planner
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8f6;
+    color: #123c32;
+    line-height: 1.6;
+}
+
+.trip-result {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* Header */
+
+.result-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.small-heading {
+    color: #16805c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.result-header h1 {
+    color: #123c32;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.header-text {
+    color: #5f706a;
+    font-size: 16px;
+}
+
+/* Destination */
+
+.destination-card {
+    background-color: #123c32;
+    color: white;
+    border-radius: 15px;
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.destination-card h2 {
+    font-size: 30px;
+    margin: 4px 0;
+}
+
+.destination-card p {
+    opacity: 0.85;
+}
+
+.destination-icon {
+    font-size: 55px;
+}
+
+/* Common Section */
+
+.section-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 28px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(18, 60, 50, 0.08);
+}
+
+.section-card > h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+
+.label {
+    display: block;
+    color: #16805c;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 4px;
+}
+
+/* Summary */
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.summary-item {
+    background-color: #f4f8f6;
+    border-radius: 10px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.summary-icon {
+    font-size: 27px;
+}
+
+.summary-item strong {
+    display: block;
+    color: #123c32;
+    font-size: 16px;
+}
+
+/* Day Cards */
+
+.day-card {
+    border: 1px solid #dce8e3;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 18px;
+}
+
+.day-card:last-child {
+    margin-bottom: 0;
+}
+
+.day-number {
+    min-width: 50px;
+    height: 50px;
+    background-color: #16805c;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.day-content {
+    flex: 1;
+}
+
+.day-content h3 {
+    color: #123c32;
+    margin-bottom: 12px;
+}
+
+.place {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.place > span {
+    font-size: 20px;
+}
+
+.place h4 {
+    color: #123c32;
+    margin-bottom: 3px;
+}
+
+.place p {
+    color: #687873;
+    font-size: 14px;
+}
+
+/* Activities */
+
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.activity-tag {
+    background-color: #e4f2ed;
+    color: #16805c;
+    padding: 6px 11px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cost {
+    color: #687873;
+    font-size: 14px;
+}
+
+.cost strong {
+    color: #123c32;
+}
+
+/* Total Cost */
+
+.cost-card {
+    background-color: #16805c;
+    color: white;
+    border-radius: 15px;
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.cost-card span {
+    font-size: 14px;
+}
+
+.cost-card h2 {
+    font-size: 30px;
+    margin-top: 3px;
+}
+
+.budget-icon {
+    font-size: 45px;
+}
+
+/* Buttons */
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    border: none;
+    padding: 13px 25px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #123c32;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #16805c;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .trip-result {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .result-header h1 {
+        font-size: 29px;
+    }
+
+    .destination-card {
+        padding: 22px;
+    }
+
+    .destination-card h2 {
+        font-size: 25px;
+    }
+
+    .destination-icon {
+        font-size: 42px;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-card {
+        padding: 20px;
+    }
+
+    .day-card {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .result-header h1 {
+        font-size: 25px;
+    }
+
+    .header-text {
+        font-size: 14px;
+    }
+
+    .destination-card {
+        padding: 18px;
+    }
+
+    .destination-card h2 {
+        font-size: 22px;
+    }
+
+    .destination-icon {
+        font-size: 35px;
+    }
+
+    .day-card {
+        flex-direction: column;
+    }
+
+    .day-number {
+        width: 45px;
+        min-width: 45px;
+        height: 45px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .cost-card {
+        padding: 20px;
+    }
+
+    .cost-card h2 {
+        font-size: 25px;
+    }
+}
+
+/* Print */
+
+@media print {
+
+    body {
+        background-color: white;
+    }
+
+    .trip-result {
+        width: 100%;
+        margin: 0;
+    }
+
+    .actions {
+        display: none;
+    }
+
+    .section-card,
+    .destination-card,
+    .cost-card {
+        box-shadow: none;
+    }
+}
