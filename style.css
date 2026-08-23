@@ -1,0 +1,611 @@
+/* ========================================
+   BASIC RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    /* YOUR BACKGROUND IMAGE */
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.20)
+        ),
+        url("advanture.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    color: white;
+}
+
+
+/* ========================================
+   MAIN CONTAINER
+======================================== */
+
+.container {
+    width: 100%;
+    max-width: 650px;
+
+    /* Transparent */
+    background: rgba(255, 255, 255, 0.10);
+
+    border: 1px solid rgba(255, 255, 255, 0.30);
+
+    border-radius: 25px;
+
+    padding: 5px;
+
+    /* Shadow */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+
+    transition: 0.4s ease;
+
+    animation: containerShow 0.8s ease;
+}
+
+
+/* Container hover */
+
+.container:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.45),
+        0 0 25px rgba(0, 200, 255, 0.15);
+}
+
+
+/* Container animation */
+
+@keyframes containerShow {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ========================================
+   PLANNER CARD
+======================================== */
+
+.planner-card {
+    padding: 35px;
+
+    /* Transparent card */
+    background: rgba(20, 35, 55, 0.35);
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    box-shadow:
+        inset 0 0 20px rgba(255, 255, 255, 0.03);
+
+    transition: 0.4s ease;
+}
+
+
+/* ========================================
+   HEADING
+======================================== */
+
+h1 {
+    text-align: center;
+
+    font-size: 34px;
+
+    margin-bottom: 8px;
+
+    color: white;
+
+    text-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.5);
+
+    animation: headingAnimation 1s ease;
+}
+
+
+/* Heading animation */
+
+@keyframes headingAnimation {
+
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* ========================================
+   SUBTITLE
+======================================== */
+
+.subtitle {
+    text-align: center;
+
+    color: #f1f5f9;
+
+    font-size: 15px;
+
+    margin-bottom: 30px;
+
+    text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ========================================
+   FORM GROUP
+======================================== */
+
+.form-group {
+    margin-bottom: 22px;
+
+    animation: formAnimation 0.7s ease;
+}
+
+
+/* Form animation */
+
+@keyframes formAnimation {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ========================================
+   LABEL
+======================================== */
+
+.form-group > label {
+    display: block;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ========================================
+   SELECT + INPUT
+======================================== */
+
+select,
+input[type="number"],
+input[type="date"] {
+
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border-radius: 11px;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+
+    /* Transparent */
+    background: rgba(255, 255, 255, 0.15);
+
+    color: white;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+
+/* ========================================
+   SELECT OPTIONS
+======================================== */
+
+select option {
+
+    background: #172337;
+
+    color: white;
+}
+
+
+/* ========================================
+   PLACEHOLDER
+======================================== */
+
+input::placeholder {
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* ========================================
+   INPUT HOVER
+======================================== */
+
+select:hover,
+input[type="number"]:hover,
+input[type="date"]:hover {
+
+    border-color: #38bdf8;
+
+    background: rgba(255, 255, 255, 0.20);
+}
+
+
+/* ========================================
+   INPUT FOCUS
+======================================== */
+
+select:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+
+    border-color: #38bdf8;
+
+    background: rgba(255, 255, 255, 0.20);
+
+    box-shadow:
+        0 0 0 3px rgba(56, 189, 248, 0.15),
+        0 0 15px rgba(56, 189, 248, 0.25);
+
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   ACTIVITIES
+======================================== */
+
+.activities {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+}
+
+
+/* Activity box */
+
+.activity {
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 13px;
+
+    border-radius: 11px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+/* Activity hover */
+
+.activity:hover {
+
+    background: rgba(56, 189, 248, 0.20);
+
+    border-color: #38bdf8;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 5px 15px rgba(56, 189, 248, 0.20);
+}
+
+
+/* Checkbox */
+
+.activity input {
+
+    width: 16px;
+
+    height: 16px;
+
+    margin-right: 8px;
+
+    accent-color: #38bdf8;
+
+    cursor: pointer;
+}
+
+
+/* ========================================
+   TRAVEL TYPES
+======================================== */
+
+.travel-types {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+
+/* Travel type */
+
+.travel-types label {
+
+    padding: 12px 5px;
+
+    text-align: center;
+
+    border-radius: 11px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+/* Travel type hover */
+
+.travel-types label:hover {
+
+    background: rgba(139, 92, 246, 0.22);
+
+    border-color: #a78bfa;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 5px 15px rgba(139, 92, 246, 0.20);
+}
+
+
+/* Radio */
+
+.travel-types input {
+
+    accent-color: #a78bfa;
+
+    cursor: pointer;
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+button {
+
+    width: 100%;
+
+    padding: 16px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #06b6d4,
+        #2563eb,
+        #7c3aed
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.30);
+
+    transition: all 0.35s ease;
+
+    background-size: 200% 200%;
+
+    animation: buttonGradient 5s ease infinite;
+}
+
+
+/* Button gradient animation */
+
+@keyframes buttonGradient {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Button hover */
+
+button:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.40),
+        0 0 25px rgba(56, 189, 248, 0.30);
+}
+
+
+/* Button click */
+
+button:active {
+
+    transform: translateY(0);
+
+}
+
+
+/* ========================================
+   DATE INPUT ICON
+======================================== */
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+
+    filter: invert(1);
+
+    cursor: pointer;
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVE
+======================================== */
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 15px;
+
+    }
+
+
+    .container {
+
+        max-width: 100%;
+
+        border-radius: 20px;
+
+    }
+
+
+    .planner-card {
+
+        padding: 25px 20px;
+
+    }
+
+
+    h1 {
+
+        font-size: 27px;
+
+    }
+
+
+    .subtitle {
+
+        font-size: 13px;
+
+    }
+
+
+    .activities {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .travel-types {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 400px) {
+
+    .planner-card {
+
+        padding: 20px 15px;
+
+    }
+
+
+    h1 {
+
+        font-size: 24px;
+
+    }
+
+
+    .travel-types {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
