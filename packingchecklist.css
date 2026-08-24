@@ -1,0 +1,501 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f4f8f6;
+
+    color: #333;
+}
+
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+
+    height: 70px;
+
+    background: #123c32;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 8%;
+}
+
+
+.logo {
+
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+
+    color: #8ee5c0;
+}
+
+
+
+/* ================= PACKING SECTION ================= */
+
+.packing-section {
+
+    padding: 70px 20px;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(240, 248, 245, 0.92),
+            rgba(240, 248, 245, 0.92)
+        ),
+        url("https://images.unsplash.com/photo-1551632811-561732d1e306");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+
+.packing-container {
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+
+/* ================= HEADING ================= */
+
+.heading {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.heading-icon {
+
+    font-size: 55px;
+}
+
+
+.heading h1 {
+
+    color: #123c32;
+
+    font-size: 40px;
+
+    margin: 10px 0;
+}
+
+
+.heading p {
+
+    color: #666;
+
+    font-size: 18px;
+}
+
+
+
+/* ================= CATEGORY ================= */
+
+.packing-category {
+
+    background: white;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+.packing-category h2 {
+
+    color: #16805c;
+
+    margin-bottom: 20px;
+
+    font-size: 24px;
+}
+
+
+
+/* ================= CHECKLIST ================= */
+
+.checklist {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+
+.check-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    background: #f1f7f4;
+
+    border: 1px solid #dcebe5;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.check-item:hover {
+
+    background: #dff1e9;
+
+    transform: translateY(-2px);
+}
+
+
+.check-item input {
+
+    width: 18px;
+
+    height: 18px;
+
+    cursor: pointer;
+}
+
+
+.check-item span {
+
+    font-size: 16px;
+}
+
+
+
+/* ================= CHECKED EFFECT ================= */
+
+.check-item input:checked + span {
+
+    text-decoration: line-through;
+
+    color: #888;
+}
+
+
+
+/* ================= TRAVEL TIP ================= */
+
+.packing-tip {
+
+    background: #123c32;
+
+    color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-top: 30px;
+}
+
+
+.packing-tip h3 {
+
+    margin-bottom: 10px;
+
+    font-size: 20px;
+}
+
+
+.packing-tip p {
+
+    line-height: 1.6;
+
+    color: #d9eee6;
+}
+
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+
+    background: #0d2e26;
+
+    color: white;
+
+    padding-top: 50px;
+}
+
+
+.footer-content {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 0 30px 40px;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1.5fr 1fr;
+
+    gap: 40px;
+}
+
+
+.footer-column h2 {
+
+    color: #8ee5c0;
+
+    margin-bottom: 15px;
+}
+
+
+.footer-column h3 {
+
+    color: #8ee5c0;
+
+    margin-bottom: 15px;
+}
+
+
+.footer-column p {
+
+    color: #c9d8d3;
+
+    line-height: 1.7;
+
+    margin-bottom: 8px;
+}
+
+
+.footer-column a {
+
+    display: block;
+
+    color: #c9d8d3;
+
+    text-decoration: none;
+
+    margin-bottom: 10px;
+
+    transition: 0.3s;
+}
+
+
+.footer-column a:hover {
+
+    color: #8ee5c0;
+
+    padding-left: 5px;
+}
+
+
+
+/* ================= SOCIAL ICONS ================= */
+
+.social-icons {
+
+    display: flex;
+
+    gap: 12px;
+}
+
+
+.social-icons span {
+
+    width: 40px;
+
+    height: 40px;
+
+    background: #174a3d;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.social-icons span:hover {
+
+    background: #16805c;
+
+    transform: translateY(-3px);
+}
+
+
+
+/* ================= FOOTER BOTTOM ================= */
+
+.footer-bottom {
+
+    border-top: 1px solid #285046;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: #aebfba;
+
+}
+
+
+.footer-bottom p {
+
+    margin: 5px;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media screen and (max-width: 800px) {
+
+    .footer-content {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .checklist {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .navbar {
+
+        padding: 0 20px;
+
+    }
+
+
+    .nav-links {
+
+        display: none;
+
+    }
+
+
+    .packing-section {
+
+        padding: 40px 15px;
+
+    }
+
+
+    .heading h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .heading p {
+
+        font-size: 16px;
+
+    }
+
+
+    .packing-category {
+
+        padding: 20px;
+
+    }
+
+
+    .footer-content {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+    }
+
+
+    .social-icons {
+
+        justify-content: center;
+
+    }
+
+}
