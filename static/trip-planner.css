@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f8f6;
+    color: #123c32;
+}
+
+.trip-planner {
+    padding: 70px 8%;
+}
+
+.planner-header {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #16805c;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.planner-header h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.planner-header p {
+    color: #5f6f69;
+    line-height: 1.6;
+}
+
+.planner-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.trip-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    box-shadow: 0 5px 20px rgba(18, 60, 50, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cfdad6;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    background: #f4f8f6;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #16805c;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.activity-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.activity-card {
+    background: #f4f8f6;
+    padding: 14px;
+    border: 1px solid #d8e4df;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.activity-card:hover {
+    background: #e3f3ed;
+    border-color: #16805c;
+}
+
+.activity-card input {
+    width: auto;
+    margin-right: 6px;
+}
+
+.activity-card span {
+    font-size: 14px;
+}
+
+.plan-btn {
+    grid-column: 1 / -1;
+    border: none;
+    background: #123c32;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.plan-btn:hover {
+    background: #16805c;
+}
+
+.planner-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(18, 60, 50, 0.1);
+    transition: transform 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card span {
+    font-size: 30px;
+}
+
+.info-card h3 {
+    margin: 12px 0 8px;
+}
+
+.info-card p {
+    color: #5f6f69;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .planner-container {
+        grid-template-columns: 1fr;
+    }
+
+    .planner-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .activity-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .trip-planner {
+        padding: 50px 5%;
+    }
+
+    .planner-header h1 {
+        font-size: 28px;
+    }
+
+    .trip-form {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .activity-options {
+        grid-template-columns: 1fr;
+    }
+
+    .planner-info {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width,
+    .plan-btn {
+        grid-column: auto;
+    }
+}
