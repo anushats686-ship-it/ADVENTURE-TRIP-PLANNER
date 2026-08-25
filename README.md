@@ -1,6 +1,4 @@
-# ADVENTURE-TRIP-PLANNER
-
-## 🚀 Live Demo
+# 🌍 ADVENTURE-TRIP-PLANNER
 
 ## 🚀 Live Demo
 
