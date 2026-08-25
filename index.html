@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+
+
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">Trip<span>Venture</span></a>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#trip-planner">Plan Trip</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#trip-result">My Trip</a>
+        </div>
+
+        <a href="#trip-planner" class="nav-btn">Plan Now</a>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <p class="hero-tag">🌍 EXPLORE WITHOUT LIMITS</p>
+
+            <h1>
+                Your Next Adventure
+                <span>Starts Here.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover amazing destinations, plan unforgettable journeys,
+                choose exciting activities and create your perfect adventure.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#trip-planner" class="primary-btn">
+                    Plan My Trip →
+                </a>
+
+                <a href="#destinations" class="secondary-btn">
+                    Explore Destinations
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <h3>50+</h3>
+                    <p>Destinations</p>
+                </div>
+
+                <div>
+                    <h3>100+</h3>
+                    <p>Activities</p>
+                </div>
+
+                <div>
+                    <h3>Easy</h3>
+                    <p>Trip Planning</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-text">
+            ↓ Scroll to Explore
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id = "trip-planner" class="trip-planner">
+        <div class="planner-header">
+            <p class="subtitle">PLAN YOUR JOURNEY</p>
+            <h1>Where Will Your Adventure Take You?</h1>
+            <p>Create your perfect trip by choosing your destination, duration, activities and budget.</p>
+        </div>
+
+        <div class="planner-container">
+
+            <form class="trip-form">
+
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <select id="destination">
+                        <option value="">Choose a destination</option>
+                        <option>Manali</option>
+                        <option>Goa</option>
+                        <option>Coorg</option>
+                        <option>Ladakh</option>
+                        <option>Rishikesh</option>
+                        <option>Munnar</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="days">Number of Days</label>
+                    <input type="number" id="days" placeholder="Enter number of days" min="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="travel-type">Travel Type</label>
+                    <select id="travel-type">
+                        <option value="">Choose travel type</option>
+                        <option>Solo</option>
+                        <option>Couple</option>
+                        <option>Family</option>
+                        <option>Friends</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Budget</label>
+                    <select id="budget">
+                        <option value="">Select your budget</option>
+                        <option>₹5,000 - ₹10,000</option>
+                        <option>₹10,000 - ₹25,000</option>
+                        <option>₹25,000 - ₹50,000</option>
+                        <option>₹50,000+</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Choose Activities</label>
+
+                    <div class="activity-options">
+                        <label class="activity-card">
+                            <input type="checkbox">
+                            <span>🥾 Trekking</span>
+                        </label>
+
+                        <label class="activity-card">
+                            <input type="checkbox">
+                            <span>🏕️ Camping</span>
+                        </label>
+
+                        <label class="activity-card">
+                            <input type="checkbox">
+                            <span>🪂 Paragliding</span>
+                        </label>
+
+                        <label class="activity-card">
+                            <input type="checkbox">
+                            <span>🚣 River Rafting</span>
+                        </label>
+
+                        <label class="activity-card">
+                            <input type="checkbox">
+                            <span>🤿 Scuba Diving</span>
+                        </label>
+
+                        <label class="activity-card">
+                            <input type="checkbox">
+                            <span>🏍️ Bike Riding</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="plan-btn">Plan My Trip →</button>
+
+            </form>
+
+            <div class="planner-info">
+                <div class="info-card">
+                    <span>🗺️</span>
+                    <h3>Choose Your Destination</h3>
+                    <p>Select an exciting destination for your next adventure.</p>
+                </div>
+
+                <div class="info-card">
+                    <span>🎯</span>
+                    <h3>Pick Your Activities</h3>
+                    <p>Choose the adventures and experiences you want to enjoy.</p>
+                </div>
+
+                <div class="info-card">
+                    <span>💰</span>
+                    <h3>Set Your Budget</h3>
+                    <p>Plan your trip according to a budget that works for you.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+
+<section id = "destinations" class="destinations-section">
+        <div class="section-heading">
+            <p class="subtitle">EXPLORE THE WORLD</p>
+            <h1>Popular Adventure Destinations</h1>
+            <p>
+                Discover exciting places and choose your next unforgettable adventure.
+            </p>
+        </div>
+
+        <div class="destinations-grid">
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80" alt="Manali">
+                <div class="card-content">
+                    <h2>Manali</h2>
+                    <p>Experience breathtaking mountains, valleys and thrilling Himalayan adventures.</p>
+
+                    <h3>Adventure Activities</h3>
+                    <div class="activities">
+                        <span>Trekking</span>
+                        <span>Paragliding</span>
+                        <span>Camping</span>
+                    </div>
+
+                    <button>Explore</button>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80" alt="Goa">
+                <div class="card-content">
+                    <h2>Goa</h2>
+                    <p>Enjoy beautiful beaches, water sports and vibrant coastal experiences.</p>
+
+                    <h3>Adventure Activities</h3>
+                    <div class="activities">
+                        <span>Scuba Diving</span>
+                        <span>Parasailing</span>
+                        <span>Kayaking</span>
+                    </div>
+
+                    <button>Explore</button>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=800&q=80" alt="Coorg">
+                <div class="card-content">
+                    <h2>Coorg</h2>
+                    <p>Explore lush green hills, waterfalls, coffee plantations and peaceful nature.</p>
+
+                    <h3>Adventure Activities</h3>
+                    <div class="activities">
+                        <span>Hiking</span>
+                        <span>River Rafting</span>
+                        <span>Camping</span>
+                    </div>
+
+                    <button>Explore</button>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=800&q=80" alt="Ladakh">
+                <div class="card-content">
+                    <h2>Ladakh</h2>
+                    <p>Ride through dramatic mountain roads and explore the stunning Himalayan landscape.</p>
+
+                    <h3>Adventure Activities</h3>
+                    <div class="activities">
+                        <span>Bike Riding</span>
+                        <span>Trekking</span>
+                        <span>Camping</span>
+                    </div>
+
+                    <button>Explore</button>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1602304468266-0a8f63f4d64c?auto=format&fit=crop&w=800&q=80" alt="Rishikesh">
+                <div class="card-content">
+                    <h2>Rishikesh</h2>
+                    <p>Experience the perfect combination of spirituality, rivers and adventure.</p>
+
+                    <h3>Adventure Activities</h3>
+                    <div class="activities">
+                        <span>River Rafting</span>
+                        <span>Bungee Jumping</span>
+                        <span>Trekking</span>
+                    </div>
+
+                    <button>Explore</button>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80" alt="Munnar">
+                <div class="card-content">
+                    <h2>Munnar</h2>
+                    <p>Discover misty hills, tea gardens and scenic trails surrounded by nature.</p>
+
+                    <h3>Adventure Activities</h3>
+                    <div class="activities">
+                        <span>Hiking</span>
+                        <span>Trekking</span>
+                        <span>Mountain Biking</span>
+                    </div>
+
+                    <button>Explore</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+ <section id = "trip-result" class="trip-result-section">
+
+        <!-- Section Heading -->
+        <div class="trip-result-heading">
+            <p class="trip-result-subtitle">YOUR ADVENTURE PLAN</p>
+            <h1>Your Trip Is Ready!</h1>
+            <p>Here is a complete overview of your planned adventure.</p>
+        </div>
+
+
+        <!-- Trip Summary -->
+        <div class="trip-summary">
+
+            <div class="summary-card">
+                <span>📍</span>
+                <div>
+                    <p>Destination</p>
+                    <h3>Manali</h3>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <span>📅</span>
+                <div>
+                    <p>Duration</p>
+                    <h3>5 Days</h3>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <span>💰</span>
+                <div>
+                    <p>Budget</p>
+                    <h3>₹25,000</h3>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <span>🚗</span>
+                <div>
+                    <p>Travel Type</p>
+                    <h3>Friends</h3>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="trip-result-grid">
+
+            <!-- Left Side -->
+            <div class="trip-main-content">
+
+                <!-- Destination Details -->
+                <div class="result-box">
+                    <h2>About Manali</h2>
+                    <p>
+                        Manali is a beautiful Himalayan destination known for its
+                        snow-covered mountains, scenic valleys and exciting
+                        adventure activities.
+                    </p>
+                </div>
+
+
+                <!-- Selected Activities -->
+                <div class="result-box">
+                    <h2>Selected Activities</h2>
+
+                    <div class="selected-activities">
+                        <span>🥾 Trekking</span>
+                        <span>🪂 Paragliding</span>
+                        <span>🏕️ Camping</span>
+                        <span>🚣 River Rafting</span>
+                    </div>
+                </div>
+
+
+                <!-- Day Wise Itinerary -->
+                <div class="result-box">
+                    <h2>Day-wise Itinerary</h2>
+
+                    <div class="itinerary">
+
+                        <div class="itinerary-item">
+                            <div class="day-number">Day 1</div>
+                            <div class="day-details">
+                                <h3>Arrival & Local Exploration</h3>
+                                <p>Arrive in Manali, check into your hotel and explore Mall Road.</p>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item">
+                            <div class="day-number">Day 2</div>
+                            <div class="day-details">
+                                <h3>Solang Valley Adventure</h3>
+                                <p>Enjoy paragliding, sightseeing and exciting outdoor activities.</p>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item">
+                            <div class="day-number">Day 3</div>
+                            <div class="day-details">
+                                <h3>Trekking & Camping</h3>
+                                <p>Go on a scenic trek and spend the evening camping in nature.</p>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item">
+                            <div class="day-number">Day 4</div>
+                            <div class="day-details">
+                                <h3>River Rafting</h3>
+                                <p>Experience river rafting and visit nearby scenic locations.</p>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item">
+                            <div class="day-number">Day 5</div>
+                            <div class="day-details">
+                                <h3>Departure</h3>
+                                <p>Check out and depart with unforgettable memories.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Right Side -->
+            <aside class="trip-sidebar">
+
+                <!-- Places -->
+                <div class="result-box">
+                    <h2>Places to Visit</h2>
+
+                    <ul class="places-list">
+                        <li>🏔️ Solang Valley</li>
+                        <li>❄️ Rohtang Pass</li>
+                        <li>🏞️ Hidimba Temple</li>
+                        <li>🌲 Jogini Waterfall</li>
+                        <li>🛍️ Mall Road</li>
+                    </ul>
+                </div>
+
+
+                <!-- Estimated Cost -->
+                <div class="cost-card">
+                    <h2>Estimated Cost</h2>
+
+                    <div class="cost-row">
+                        <span>Stay</span>
+                        <strong>₹8,000</strong>
+                    </div>
+
+                    <div class="cost-row">
+                        <span>Travel</span>
+                        <strong>₹6,000</strong>
+                    </div>
+
+                    <div class="cost-row">
+                        <span>Activities</span>
+                        <strong>₹7,000</strong>
+                    </div>
+
+                    <div class="cost-row">
+                        <span>Food & Other</span>
+                        <strong>₹4,000</strong>
+                    </div>
+
+                    <div class="total-cost">
+                        <span>Total</span>
+                        <strong>₹25,000</strong>
+                    </div>
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="trip-buttons">
+                    <button class="save-trip-btn">♡ Save Trip</button>
+                    <button class="print-trip-btn" onclick="window.print()">🖨 Print Trip</button>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+<section id="packing" class="packing-section">
+
+    <!-- Packing Header -->
+    <div class="packing-heading">
+        <p class="packing-subtitle">TRAVEL SMART</p>
+        <h1>Get Ready for Your Adventure</h1>
+        <p>
+            Check the weather and make sure you have everything you need
+            before starting your journey.
+        </p>
+    </div>
+
+    <div class="packing-layout">
+
+        <!-- Packing Checklist -->
+        <div class="packing-card">
+            <div class="packing-card-heading">
+                <div>
+                    <p class="packing-label">TRIP ESSENTIALS</p>
+                    <h2>🎒 Packing Checklist</h2>
+                </div>
+
+                <span class="item-count">0 / 8 Packed</span>
+            </div>
+
+            <div class="packing-list">
+
+                <label class="packing-item">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>🪪 ID & Travel Documents</span>
+                </label>
+
+                <label class="packing-item">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>👕 Clothes & Jacket</span>
+                </label>
+
+                <label class="packing-item">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>👟 Comfortable Shoes</span>
+                </label>
+
+                <label class="packing-item">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>🧴 Toiletries</span>
+                </label>
+
+                <label class="packing-item">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>📱 Phone & Charger</span>
+                </label>
+
+                <label class="packing-item">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>💊 First Aid Kit</span>
+                </label>
+
+                <label class="packing-item">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>💧 Water Bottle</span>
+                </label>
+
+                <label class="packing-item">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span>📷 Camera</span>
+                </label>
+
+            </div>
+        </div>
+
+
+        <!-- Weather Section -->
+        <div class="weather-container">
+
+            <div class="weather-heading">
+                <p class="packing-label">WEATHER FORECAST</p>
+                <h2>🌦️ Destination Weather</h2>
+                <p>Check the expected weather before your adventure.</p>
+            </div>
+
+            <div class="weather-main-card">
+                <div class="weather-location">
+                    <span>📍</span>
+                    <div>
+                        <h3>Manali, India</h3>
+                        <p>Partly Cloudy</p>
+                    </div>
+                </div>
+
+                <div class="weather-temperature">
+                    <h1>18°</h1>
+                    <p>Feels like 16°</p>
+                </div>
+            </div>
+
+
+            <!-- Weather Forecast Cards -->
+            <div class="weather-cards">
+
+                <div class="weather-day-card">
+                    <p>Today</p>
+                    <span>⛅</span>
+                    <h3>18°</h3>
+                    <small>12°</small>
+                </div>
+
+                <div class="weather-day-card">
+                    <p>Tomorrow</p>
+                    <span>☀️</span>
+                    <h3>21°</h3>
+                    <small>14°</small>
+                </div>
+
+                <div class="weather-day-card">
+                    <p>Wednesday</p>
+                    <span>🌦️</span>
+                    <h3>19°</h3>
+                    <small>11°</small>
+                </div>
+
+                <div class="weather-day-card">
+                    <p>Thursday</p>
+                    <span>🌧️</span>
+                    <h3>16°</h3>
+                    <small>10°</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Common Footer -->
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <h2>Trip<span>Venture</span></h2>
+            <p>
+                Plan better, explore more and create unforgettable
+                adventures with ease.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="#home">Home</a>
+            <a href="#trip-planner">Plan Trip</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#trip-result">My Trip</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Travel</h3>
+            <a href="#">Adventure Trips</a>
+            <a href="#">Popular Places</a>
+            <a href="#">Travel Tips</a>
+            <a href="#packing">Packing List</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 TripVenture. Plan. Explore. Adventure.</p>
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

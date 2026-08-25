@@ -1,0 +1,1322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f8f6;
+    color: #123c32;
+}
+
+.trip-planner {
+    padding: 70px 8%;
+}
+
+.planner-header {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #16805c;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.planner-header h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.planner-header p {
+    color: #5f6f69;
+    line-height: 1.6;
+}
+
+.planner-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.trip-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    box-shadow: 0 5px 20px rgba(18, 60, 50, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cfdad6;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    background: #f4f8f6;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #16805c;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.activity-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.activity-card {
+    background: #f4f8f6;
+    padding: 14px;
+    border: 1px solid #d8e4df;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.activity-card:hover {
+    background: #e3f3ed;
+    border-color: #16805c;
+}
+
+.activity-card input {
+    width: auto;
+    margin-right: 6px;
+}
+
+.activity-card span {
+    font-size: 14px;
+}
+
+.plan-btn {
+    grid-column: 1 / -1;
+    border: none;
+    background: #123c32;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.plan-btn:hover {
+    background: #16805c;
+}
+
+.planner-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(18, 60, 50, 0.1);
+    transition: transform 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card span {
+    font-size: 30px;
+}
+
+.info-card h3 {
+    margin: 12px 0 8px;
+}
+
+.info-card p {
+    color: #5f6f69;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .planner-container {
+        grid-template-columns: 1fr;
+    }
+
+    .planner-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .activity-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .trip-planner {
+        padding: 50px 5%;
+    }
+
+    .planner-header h1 {
+        font-size: 28px;
+    }
+
+    .trip-form {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .activity-options {
+        grid-template-columns: 1fr;
+    }
+
+    .planner-info {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width,
+    .plan-btn {
+        grid-column: auto;
+    }
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f8f6;
+    color: #123c32;
+}
+
+.destinations-section {
+    padding: 70px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.subtitle {
+    color: #16805c;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-heading h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: #5f6f69;
+    line-height: 1.6;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.destination-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(18, 60, 50, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(18, 60, 50, 0.2);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #5f6f69;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card-content h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.activities span {
+    background: #e3f3ed;
+    color: #16805c;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card-content button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #123c32;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.card-content button:hover {
+    background: #16805c;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-heading h1 {
+        font-size: 30px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .destinations-section {
+        padding: 50px 5%;
+    }
+
+    .destinations-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section-heading h1 {
+        font-size: 26px;
+    }
+
+    .destination-card img {
+        height: 200px;
+    }
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f8f6;
+    color: #123c32;
+}
+
+.trip-result-section {
+    padding: 70px 8%;
+}
+
+/* Heading */
+
+.trip-result-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.trip-result-subtitle {
+    color: #16805c;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.trip-result-heading h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.trip-result-heading p {
+    color: #5f6f69;
+    line-height: 1.6;
+}
+
+
+/* Summary */
+
+.trip-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.summary-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 5px 15px rgba(18, 60, 50, 0.08);
+}
+
+.summary-card span {
+    font-size: 28px;
+}
+
+.summary-card p {
+    color: #5f6f69;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.summary-card h3 {
+    font-size: 17px;
+}
+
+
+/* Main Layout */
+
+.trip-result-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.trip-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.trip-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* Common Result Box */
+
+.result-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(18, 60, 50, 0.08);
+}
+
+.result-box h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.result-box p {
+    color: #5f6f69;
+    line-height: 1.7;
+}
+
+
+/* Activities */
+
+.selected-activities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.selected-activities span {
+    background: #e3f3ed;
+    color: #16805c;
+    padding: 9px 13px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* Itinerary */
+
+.itinerary {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.itinerary-item {
+    display: flex;
+    gap: 18px;
+    padding-left: 5px;
+}
+
+.day-number {
+    min-width: 65px;
+    height: 35px;
+    background: #123c32;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.day-details {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e8e5;
+    width: 100%;
+}
+
+.day-details h3 {
+    margin-bottom: 7px;
+    font-size: 17px;
+}
+
+.day-details p {
+    font-size: 14px;
+}
+
+
+/* Places */
+
+.places-list {
+    list-style: none;
+}
+
+.places-list li {
+    padding: 13px 0;
+    border-bottom: 1px solid #e2e8e5;
+    font-size: 15px;
+}
+
+
+/* Cost Card */
+
+.cost-card {
+    background: #123c32;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.cost-card h2 {
+    margin-bottom: 20px;
+}
+
+.cost-row,
+.total-cost {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.cost-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.total-cost {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+/* Buttons */
+
+.trip-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.trip-buttons button {
+    padding: 14px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.save-trip-btn {
+    background: #123c32;
+    color: white;
+    border: none;
+}
+
+.print-trip-btn {
+    background: white;
+    color: #123c32;
+    border: 2px solid #123c32;
+}
+
+.save-trip-btn:hover {
+    background: #16805c;
+}
+
+.print-trip-btn:hover {
+    background: #e3f3ed;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .trip-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trip-result-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .trip-result-section {
+        padding: 50px 5%;
+    }
+
+    .trip-result-heading h1 {
+        font-size: 28px;
+    }
+
+    .trip-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .itinerary-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .trip-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .result-box,
+    .cost-card {
+        padding: 20px;
+    }
+}
+
+
+/* Print */
+
+@media print {
+    .trip-buttons {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .result-box,
+    .summary-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f8f6;
+    color: #123c32;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #123c32;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #16805c;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #123c32;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #16805c;
+}
+
+.nav-btn {
+    background: #123c32;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: #16805c;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 100vh;
+    padding: 140px 8% 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(18, 60, 50, 0.92) 0%,
+            rgba(18, 60, 50, 0.7) 45%,
+            rgba(18, 60, 50, 0.2) 100%
+        ),
+        url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #7ee0ba;
+}
+
+.hero-description {
+    max-width: 600px;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #e5f0ec;
+}
+
+
+/* Buttons */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 45px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 14px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #16805c;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: white;
+    color: #123c32;
+}
+
+.secondary-btn {
+    border: 2px solid white;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #123c32;
+}
+
+
+/* Hero Stats */
+
+.hero-stats {
+    display: flex;
+    gap: 45px;
+}
+
+.hero-stats h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.hero-stats p {
+    font-size: 13px;
+    color: #d6e6df;
+}
+
+
+/* Scroll Text */
+
+.scroll-text {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero-stats {
+        gap: 30px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 5%;
+        height: auto;
+        min-height: 70px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-btn {
+        padding: 10px 14px;
+    }
+
+    .hero {
+        padding: 130px 5% 80px;
+        min-height: 100vh;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        text-align: center;
+    }
+
+    .hero-stats {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .hero-stats h3 {
+        font-size: 20px;
+    }
+
+    .scroll-text {
+        display: none;
+    }
+}
+
+
+
+
+
+
+/* =========================
+   PACKING SECTION
+========================= */
+
+.packing-section {
+    padding: 80px 8%;
+    background: #f4f8f6;
+    font-family: Arial, sans-serif;
+    color: #123c32;
+}
+
+.packing-heading {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto 45px;
+}
+
+.packing-subtitle,
+.packing-label {
+    color: #16805c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.packing-heading h1 {
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.packing-heading > p:last-child {
+    color: #5f6f69;
+    line-height: 1.6;
+}
+
+.packing-layout {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+/* =========================
+   PACKING CHECKLIST
+========================= */
+
+.packing-card,
+.weather-main-card,
+.weather-day-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(18, 60, 50, 0.08);
+}
+
+.packing-card {
+    padding: 30px;
+}
+
+.packing-card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e8e5;
+}
+
+.packing-card-heading h2 {
+    margin-top: 8px;
+}
+
+.item-count {
+    background: #e3f3ed;
+    color: #16805c;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.packing-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.packing-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 5px;
+    border-bottom: 1px solid #edf1ef;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.packing-item:hover {
+    color: #16805c;
+    padding-left: 10px;
+}
+
+.packing-item input {
+    accent-color: #16805c;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   WEATHER SECTION
+========================= */
+
+.weather-heading {
+    margin-bottom: 20px;
+}
+
+.weather-heading h2 {
+    margin: 8px 0;
+}
+
+.weather-heading > p:last-child {
+    color: #5f6f69;
+    font-size: 14px;
+}
+
+.weather-main-card {
+    background: #123c32;
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.weather-location {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.weather-location > span {
+    font-size: 28px;
+}
+
+.weather-location p,
+.weather-temperature p {
+    color: #cfe4dc;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.weather-temperature {
+    text-align: right;
+}
+
+.weather-temperature h1 {
+    font-size: 50px;
+}
+
+.weather-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.weather-day-card {
+    padding: 15px 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.weather-day-card:hover {
+    transform: translateY(-5px);
+}
+
+.weather-day-card p {
+    font-size: 12px;
+    color: #5f6f69;
+}
+
+.weather-day-card span {
+    display: block;
+    font-size: 26px;
+    margin: 12px 0;
+}
+
+.weather-day-card h3 {
+    font-size: 17px;
+}
+
+.weather-day-card small {
+    color: #16805c;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #123c32;
+    color: white;
+    padding: 55px 8% 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-brand h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-brand h2 span {
+    color: #7ee0ba;
+}
+
+.footer-brand p {
+    max-width: 350px;
+    color: #cfe4dc;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h3 {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #cfe4dc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    color: #cfe4dc;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .packing-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .packing-section {
+        padding: 55px 5%;
+    }
+
+    .packing-heading h1 {
+        font-size: 28px;
+    }
+
+    .packing-card {
+        padding: 20px;
+    }
+
+    .packing-card-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .weather-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .weather-main-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .weather-temperature {
+        text-align: left;
+    }
+
+    .footer {
+        padding: 45px 5% 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+}
+
+
+
+
+
+
